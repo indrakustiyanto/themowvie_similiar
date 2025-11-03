@@ -32,4 +32,9 @@ def recomendationsMovieTv(type, movieId):
     return jsonify(response.json())
 
 
+@app.route('/')
+def home():
+    return "Mowvie Recomendation API is running."
+
+
 
