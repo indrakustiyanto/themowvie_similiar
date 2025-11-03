@@ -37,4 +37,8 @@ def home():
     return "Mowvie Recomendation API is running."
 
 
+if __name__ == '__main__':
+    app.run()
+
+
 
