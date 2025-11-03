@@ -22,7 +22,7 @@ CORS(app, supports_credentials=True)
 # details page: similiar movie/series enpoint
 @app.route('/recomendation/<string:type>/<int:movieId>/')
 def recomendationsMovieTv(type, movieId):
-    url = f"https://api.themoviedb.org/3/{type}/{movieId}/recommendations?language=en-US&page=1"
+    url = f"https://api.themoviedb.org/3/{type}/{movieId}/similar?language=en-US&page=1"
     headers = {
         "accept" : "application/json",
         "Authorization" : f"Bearer {TMDB_ACCESS_TOKEN}"
